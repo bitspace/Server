@@ -67,6 +67,7 @@ SET(common_sources
 	rulesys.cpp
 	say_link.cpp
 	serialize_buffer.cpp
+	server_event_scheduler.cpp
 	serverinfo.cpp
 	shareddb.cpp
 	skills.cpp
@@ -250,6 +251,7 @@ SET(repositories
 	repositories/base/base_rule_sets_repository.h
 	repositories/base/base_rule_values_repository.h
 	repositories/base/base_saylink_repository.h
+	repositories/base/base_server_scheduled_events_repository.h
 	repositories/base/base_skill_caps_repository.h
 	repositories/base/base_spawn2_repository.h
 	repositories/base/base_spawnentry_repository.h
@@ -413,6 +415,7 @@ SET(repositories
 	repositories/rule_sets_repository.h
 	repositories/rule_values_repository.h
 	repositories/saylink_repository.h
+	repositories/server_scheduled_events_repository.h
 	repositories/skill_caps_repository.h
 	repositories/spawn2_repository.h
 	repositories/spawnentry_repository.h
@@ -459,6 +462,7 @@ SET(common_headers
 	cli/argh.h
 	cli/eqemu_command_handler.h
 	cli/terminal_color.hpp
+	cron/croncpp.h
 	database/database_dump_service.h
 	data_verification.h
 	database.h
@@ -539,6 +543,7 @@ SET(common_headers
 	say_link.h
 	seperator.h
 	serialize_buffer.h
+	server_event_scheduler.h
 	serverinfo.h
 	servertalk.h
 	shareddb.h
